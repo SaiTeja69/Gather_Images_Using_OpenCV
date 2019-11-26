@@ -16,9 +16,8 @@ try:
     label_name = sys.argv[1]
     num_samples = int(sys.argv[2])
 except:
-    print("Arguments missing.")
-    print(desc)
-    exit(-1)
+    label_name=input("enter label name")
+    num_samples=int(input("Enter sample size"))
 
 IMG_SAVE_PATH = 'image_data'
 IMG_CLASS_PATH = os.path.join(IMG_SAVE_PATH, label_name)
